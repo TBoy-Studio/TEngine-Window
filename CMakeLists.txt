@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(tengine-project VERSION 1.0)
+project(tengine-window VERSION 1.0)
 
 # C11 is also fine
 set(CMAKE_C_STANDARD 99)
@@ -18,4 +18,4 @@ add_compile_options(-Wall -Wextra -Wpedantic -O3)
 # Include directories for header files
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_library( ${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/library.c )
+add_library( ${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/window.c )
